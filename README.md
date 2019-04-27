@@ -1,5 +1,7 @@
 ## gatsby-source-typedoc
 
+![build status](https://travis-ci.com/kamranayub/gatsby-source-typedoc.svg?branch=master)
+
 > A Gatsby plugin that executes Typedoc against TypeScript source files to create GraphQL nodes that contain the TypeDoc generated data structure
 
 ## Example Usage
@@ -17,6 +19,9 @@ module.exports = {
     {
       resolve: "gatsby-source-typedoc",
       options: {
+
+        // Array of Typescript files to
+        // include
         src: [
           `${__dirname}/path/to/index.ts`
         ],
@@ -59,3 +64,7 @@ The `typedoc.internal.content` field contains the generated JSON you can use to 
 We are using this plugin on [excaliburjs.github.io](https://github.com/excaliburjs/excaliburjs.github.io) to let us link to symbols dynamically in our documentation.
 
 In theory, you could use this to create an entire Gatsby site for your Typedoc project.
+
+## Contributing
+
+I welcome all contributions. Releases are automated through Travis CI.
