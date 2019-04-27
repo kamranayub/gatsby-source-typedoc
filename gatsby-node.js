@@ -1,28 +1,53 @@
 const typedoc = require("typedoc");
+const path = require("path");
+const fs = require("fs");
 
 exports.sourceNodes = async (
-  { actions, createNoteId, createContentDigest },
+  { actions, createNodeId, createContentDigest },
   configOptions
 ) => {
   const { createNode } = actions;
 
   delete configOptions.plugins;
 
-  console.log("plugin options", configOptions);
+  function processTypeDoc(generated) {
+    const nodeId = createNodeId("typedoc");
+    const nodeContent = JSON.stringify(generated);
 
-  const { src, cliOptions = {} } = configOptions;
+    const nodeData = Object.assign({}, generated, {
+      id: nodeId,
+      parent: null,
+      children: [],
+      internal: {
+        type: "Typedoc",
+        content: nodeContent,
+        contentDigest: createContentDigest(generated)
+      }
+    });
 
-  if (!src) {
-      throw new Error("gatsby-source-typedoc requires a `src` array of TypeScript files to process");
+    return nodeData;
   }
 
-  const app = new typedoc.CliApplication(
-    Object.extend({}, cliOptions)
-  );
-  const generated = app.generateJson(
-    src,
-    "./generated-typedoc.json"
-  );
+  const { src, typedoc: typedocOptions = {} } = configOptions;
+
+  if (!src || !Array.isArray(src)) {
+    throw new Error(
+      "gatsby-source-typedoc requires a `src` array of TypeScript files to process"
+    );
+  }
+
+  const app = new typedoc.Application(Object.assign({}, typedocOptions));
+
+  const generatedFile = path.join(__dirname, ".cache", "generated.json");
+
+  const generated = app.generateJson(src, generatedFile);
+
+  if (generated) {
+    const nodeData = processTypeDoc(JSON.parse(fs.readFileSync(generatedFile)));
+    createNode(nodeData);
+  } else {
+    console.error("Failed to generated TypeDoc JSON file");
+  }
 
   return Promise.resolve(generated);
 };

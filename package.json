@@ -25,5 +25,8 @@
   "homepage": "https://github.com/kamranayub/gatsby-source-typedoc#readme",
   "peerDependencies": {
     "typedoc": "^0.14.2"
+  },
+  "devDependencies": {
+    "typedoc": "^0.14.2"
   }
 }
