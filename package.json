@@ -13,7 +13,7 @@
   },
   "keywords": [
     "gatsby",
-    "plugin",
+    "gatsby-plugin",
     "source",
     "typedoc",
     "typescript"
