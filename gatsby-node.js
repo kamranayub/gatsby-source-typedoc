@@ -11,19 +11,18 @@ exports.sourceNodes = async (
   delete configOptions.plugins;
 
   function processTypeDoc(generated) {
-    const nodeId = createNodeId("typedoc");
+    const nodeId = createNodeId(`typedoc-${generated.name || "default"}`);
     const nodeContent = JSON.stringify(generated);
 
-    const nodeData = Object.assign({}, generated, {
+    const nodeData = {
       id: nodeId,
-      parent: null,
-      children: [],
+      source: generated,
       internal: {
         type: "Typedoc",
         content: nodeContent,
         contentDigest: createContentDigest(generated)
       }
-    });
+    };
 
     return nodeData;
   }

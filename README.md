@@ -34,6 +34,26 @@ module.exports = {
 };
 ```
 
+In GraphQL now you may do:
+
+```
+{
+  typedoc {
+    id
+    source {
+      id
+      kind
+      name
+    }
+    internal {
+      content
+    }
+  }
+}
+```
+
+The `typedoc.internal.content` field contains the generated JSON you can use to parse and use in your app. You can optionally use GraphQL to go into the `typedoc.source` fields but due to the recursive nature of the data structure, this may be more annoying than useful.
+
 ## How is this being used?
 
 We are using this plugin on [excaliburjs.github.io](https://github.com/excaliburjs/excaliburjs.github.io) to let us link to symbols dynamically in our documentation.
