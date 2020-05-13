@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-typedoc",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Gatsby source plugin that uses TypeDoc to compile to JSON exposed as GraphQL",
   "main": "index.js",
   "scripts": {
