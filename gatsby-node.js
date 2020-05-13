@@ -20,8 +20,8 @@ exports.sourceNodes = async (
       internal: {
         type: "Typedoc",
         content: nodeContent,
-        contentDigest: createContentDigest(generated)
-      }
+        contentDigest: createContentDigest(generated),
+      },
     };
 
     return nodeData;
@@ -35,7 +35,10 @@ exports.sourceNodes = async (
     );
   }
 
-  const app = new typedoc.Application(Object.assign({}, typedocOptions));
+  const app = new typedoc.Application();
+  app.options.addReader(new typedoc.TypeDocReader());
+  app.options.addReader(new typedoc.TSConfigReader());
+  app.bootstrap(Object.assign({}, typedocOptions));
 
   const generatedFile = path.join(__dirname, ".cache", "generated.json");
 
