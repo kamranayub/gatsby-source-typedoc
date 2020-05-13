@@ -25,14 +25,14 @@
   },
   "homepage": "https://github.com/kamranayub/gatsby-source-typedoc#readme",
   "peerDependencies": {
-    "typedoc": "^0.14.2"
+    "typedoc": "^0.17.6"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^4.2.0",
     "prettier": "1.17.0",
     "standard-version": "^5.0.2",
-    "typedoc": "^0.14.2"
+    "typedoc": "^0.17.6"
   },
   "husky": {
     "hooks": {
