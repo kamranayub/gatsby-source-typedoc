@@ -1,3 +1,4 @@
+const typescript = require("typescript");
 const typedoc = require("typedoc");
 const path = require("path");
 const fs = require("fs");
@@ -38,6 +39,20 @@ exports.sourceNodes = async (
   const app = new typedoc.Application();
   app.options.addReader(new typedoc.TypeDocReader());
   app.options.addReader(new typedoc.TSConfigReader());
+
+  // If specifying tsconfig file, use TS to find
+  // it so types are resolved relative to the source
+  // folder
+  if (typedocOptions.tsconfig) {
+    const tsconfig = typescript.findConfigFile(
+      typedocOptions.tsconfig,
+      fs.existsSync
+    );
+    if (tsconfig) {
+      typedocOptions.tsconfig = tsconfig;
+    }
+  }
+
   app.bootstrap(Object.assign({}, typedocOptions));
 
   const generatedFile = path.join(__dirname, ".cache", "generated.json");
