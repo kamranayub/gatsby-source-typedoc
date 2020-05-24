@@ -33,7 +33,7 @@
     "prettier": "1.17.0",
     "standard-version": "^5.0.2",
     "typedoc": "^0.17.6",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.3"
   },
   "husky": {
     "hooks": {
