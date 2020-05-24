@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [1.1.0](https://github.com/kamranayub/gatsby-source-typedoc/compare/v1.0.6...v1.1.0) (2020-05-24)
+
+
+### Features
+
+* Use Gatsby cache instead of generating a file ([49a1555](https://github.com/kamranayub/gatsby-source-typedoc/commit/49a1555))
+
+
+
 ## [1.0.6](https://github.com/kamranayub/gatsby-source-typedoc/compare/v1.0.5...v1.0.6) (2020-05-14)
 
 
