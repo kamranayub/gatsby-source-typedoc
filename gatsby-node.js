@@ -26,6 +26,7 @@ exports.sourceNodes = async (
       id: nodeId,
       source: generated,
       internal: {
+        id,
         type: "Typedoc",
         content: nodeContent,
         contentDigest: createContentDigest(generated),
