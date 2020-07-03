@@ -13,7 +13,7 @@ exports.sourceNodes = async (
   const { src, id = "default", typedoc: typedocOptions = {} } = configOptions;
 
   if (!src || !Array.isArray(src)) {
-    reporter.paninOnBuild(
+    reporter.panicOnBuild(
       "gatsby-source-typedoc requires a `src` array of TypeScript files to process"
     );
   }
