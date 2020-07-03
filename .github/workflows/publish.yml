@@ -18,6 +18,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm install
+      - run: npm run lint
       - run: npx semantic-release
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
