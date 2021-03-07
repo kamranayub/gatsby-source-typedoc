@@ -29,7 +29,7 @@ exports.helpers = {
  */
 exports.cleanNodeForSnapshot = (typedocNode) => {
   if (typedocNode.internal.content) {
-    const pathregex = new RegExp(`${__dirname.replace(/\\/g, '/')}`);
+    const pathregex = new RegExp(`${__dirname.replace(/\\/g, "/")}`, "g");
     typedocNode.internal.content = typedocNode.internal.content.replace(
       pathregex,
       "__PROJECT__"
