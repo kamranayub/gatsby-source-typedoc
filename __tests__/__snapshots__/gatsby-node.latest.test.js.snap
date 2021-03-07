@@ -5,7 +5,7 @@ Array [
   Object {
     "id": "typedoc-default",
     "internal": Object {
-      "content": "{\\"id\\":0,\\"name\\":\\"gatsby-source-typedoc\\",\\"kind\\":0,\\"flags\\":{},\\"originalName\\":\\"\\"}",
+      "content": "{\\"id\\":0,\\"name\\":\\"default\\",\\"kind\\":0,\\"flags\\":{}}",
       "contentDigest": "testdigest",
       "type": "Typedoc",
     },
@@ -20,8 +20,7 @@ Array [
       "id": 0,
       "kind": 0,
       "kindString": undefined,
-      "name": "gatsby-source-typedoc",
-      "originalName": "",
+      "name": "default",
       "sources": undefined,
     },
     "typedocId": "default",

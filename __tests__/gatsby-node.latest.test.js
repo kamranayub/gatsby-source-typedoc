@@ -1,8 +1,8 @@
-const helpers = require('./__fixtures__/helpers');
+const path = require("path");
+const helpers = require("./__fixtures__/helpers");
 const { sourceNodes } = require("../gatsby-node");
 
 describe("gatsby-node: sourceNodes", () => {
-
   describe("typedoc: latest", () => {
     it("should generate project", async () => {
       const nodes = [];
@@ -10,7 +10,11 @@ describe("gatsby-node: sourceNodes", () => {
       helpers.actions.createNode.mockImplementation((node) => nodes.push(node));
 
       await sourceNodes(helpers, {
-        src: ["./__fixtures__/simple/index.ts"],
+        src: [require.resolve("./__fixtures__/simple/index.ts")],
+        typedoc: {
+          logLevel: "Verbose",
+          tsconfig: require.resolve("./__fixtures__/simple/tsconfig.json"),
+        },
       });
 
       expect(nodes).toMatchSnapshot();

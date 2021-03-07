@@ -1,5 +1,5 @@
 const typescript = require("typescript");
-const { Application, TypeDocReader, TSConfigReader} = require("typedoc");
+const { Application, TypeDocReader, TSConfigReader } = require("typedoc");
 const fs = require("fs");
 
 exports.pluginOptionsSchema = ({ Joi }) =>
@@ -75,20 +75,13 @@ exports.sourceNodes = async (
     }
   }
 
-  app.bootstrap(Object.assign({}, typedocOptions));
+  app.bootstrap(Object.assign({ name: id }, typedocOptions));
 
   try {
     const reflection = app.convert(src);
 
     if (reflection) {
-      const eventData = {
-        outputDirectory: __dirname,
-        outputFile: `generated=${id}.json`,
-      };
-      const serialized = app.serializer.projectToObject(reflection, {
-        begin: eventData,
-        end: eventData,
-      });
+      const serialized = app.serializer.toObject(reflection);
       const nodeData = processTypeDoc(serialized);
 
       // Store in Gatsby cache
