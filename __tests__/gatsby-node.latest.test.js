@@ -1,4 +1,3 @@
-const path = require("path");
 const helpers = require("./__fixtures__/helpers");
 const { sourceNodes } = require("../gatsby-node");
 
