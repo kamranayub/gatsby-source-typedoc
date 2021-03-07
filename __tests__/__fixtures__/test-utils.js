@@ -28,6 +28,14 @@ exports.helpers = {
  * like pathnames
  */
 exports.cleanNodeForSnapshot = (typedocNode) => {
+  if (typedocNode.internal.content) {
+    const pathregex = new RegExp(`${__dirname.replace(/\\/g, '/')}`);
+    typedocNode.internal.content = typedocNode.internal.content.replace(
+      pathregex,
+      "__PROJECT__"
+    );
+  }
+
   if (typedocNode.source.children) {
     typedocNode.source.children.forEach((source) => {
       if (source.originalName) {
