@@ -14,11 +14,11 @@ jobs:
           fetch-depth: 1
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 14
           registry-url: https://registry.npmjs.org/
       - run: npm install
-      - run: npm test
       - run: npm run lint
+      - run: npm test
       - run: npx semantic-release
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
