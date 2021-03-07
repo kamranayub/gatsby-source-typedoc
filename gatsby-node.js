@@ -1,6 +1,15 @@
 const typescript = require("typescript");
-const typedoc = require("typedoc");
+const { Application, TypeDocReader, TSConfigReader} = require("typedoc");
 const fs = require("fs");
+
+exports.pluginOptionsSchema = ({ Joi }) =>
+  Joi.object({
+    src: Joi.array()
+      .items(Joi.string().required())
+      .required(),
+    id: Joi.string(),
+    typedoc: Joi.object().unknown(true),
+  }).unknown(true);
 
 exports.sourceNodes = async (
   { actions, createNodeId, createContentDigest, cache, reporter },
@@ -49,9 +58,9 @@ exports.sourceNodes = async (
     return true;
   }
 
-  const app = new typedoc.Application();
-  app.options.addReader(new typedoc.TypeDocReader());
-  app.options.addReader(new typedoc.TSConfigReader());
+  const app = new Application();
+  app.options.addReader(new TypeDocReader());
+  app.options.addReader(new TSConfigReader());
 
   // If specifying tsconfig file, use TS to find
   // it so types are resolved relative to the source

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`gatsby-node: sourceNodes typedoc: latest should generate project 1`] = `
+Array [
+  Object {
+    "id": "typedoc-default",
+    "internal": Object {
+      "content": "{\\"id\\":0,\\"name\\":\\"gatsby-source-typedoc\\",\\"kind\\":0,\\"flags\\":{},\\"originalName\\":\\"\\"}",
+      "contentDigest": "testdigest",
+      "type": "Typedoc",
+    },
+    "source": Object {
+      "categories": undefined,
+      "children": undefined,
+      "comment": undefined,
+      "decorates": undefined,
+      "decorators": undefined,
+      "flags": Object {},
+      "groups": undefined,
+      "id": 0,
+      "kind": 0,
+      "kindString": undefined,
+      "name": "gatsby-source-typedoc",
+      "originalName": "",
+      "sources": undefined,
+    },
+    "typedocId": "default",
+  },
+]
+`;
