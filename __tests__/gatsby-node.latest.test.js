@@ -1,4 +1,4 @@
-const { helpers } = require("./__fixtures__/test-utils");
+const { helpers, cleanNodeForSnapshot } = require("./__fixtures__/test-utils");
 const { sourceNodes } = require("../gatsby-node");
 
 describe("gatsby-node: sourceNodes", () => {
@@ -20,6 +20,7 @@ describe("gatsby-node: sourceNodes", () => {
       });
 
       expect(typedocNode).toBeDefined();
+      cleanNodeForSnapshot(typedocNode);
       expect(typedocNode).toMatchSnapshot();
     });
   });

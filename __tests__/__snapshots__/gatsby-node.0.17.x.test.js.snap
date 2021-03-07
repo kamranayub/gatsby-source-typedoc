@@ -264,7 +264,6 @@ Object {
         "kind": 1,
         "kindString": "Module",
         "name": "\\"index\\"",
-        "originalName": "E:/Development/Contrib/gatsby-source-typedoc/__tests__/__fixtures__/simple/index.ts",
       },
       Object {
         "children": Array [
@@ -311,7 +310,6 @@ Object {
         "kind": 1,
         "kindString": "Module",
         "name": "\\"moduleA\\"",
-        "originalName": "E:/Development/Contrib/gatsby-source-typedoc/__tests__/__fixtures__/simple/moduleA.ts",
       },
     ],
     "flags": Object {},

@@ -1,5 +1,5 @@
 /**
- * Shared Gatsby helper mocks
+ * Shared Gatsby helpers
  */
 exports.helpers = {
   actions: {
@@ -21,4 +21,21 @@ exports.helpers = {
     verbose: jest.fn(),
     warn: jest.fn(),
   },
+};
+
+/**
+ * Clean typedoc node for snapshots to remove things
+ * like pathnames
+ */
+exports.cleanNodeForSnapshot = (typedocNode) => {
+  if (typedocNode.source.children) {
+    typedocNode.source.children.forEach((source) => {
+      if (source.originalName) {
+        delete source.originalName;
+      }
+    });
+  }
+  if (typedocNode.source.sourceFileToPackageName) {
+    delete typedocNode.source.sourceFileToPackageName;
+  }
 };
