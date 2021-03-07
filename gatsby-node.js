@@ -1,6 +1,15 @@
 const typescript = require("typescript");
-const typedoc = require("typedoc");
+const { Application, TypeDocReader, TSConfigReader } = require("typedoc");
 const fs = require("fs");
+
+exports.pluginOptionsSchema = ({ Joi }) =>
+  Joi.object({
+    src: Joi.array()
+      .items(Joi.string().required())
+      .required(),
+    id: Joi.string(),
+    typedoc: Joi.object().unknown(true),
+  }).unknown(true);
 
 exports.sourceNodes = async (
   { actions, createNodeId, createContentDigest, cache, reporter },
@@ -49,9 +58,9 @@ exports.sourceNodes = async (
     return true;
   }
 
-  const app = new typedoc.Application();
-  app.options.addReader(new typedoc.TypeDocReader());
-  app.options.addReader(new typedoc.TSConfigReader());
+  const app = new Application();
+  app.options.addReader(new TypeDocReader());
+  app.options.addReader(new TSConfigReader());
 
   // If specifying tsconfig file, use TS to find
   // it so types are resolved relative to the source
@@ -66,20 +75,30 @@ exports.sourceNodes = async (
     }
   }
 
-  app.bootstrap(Object.assign({}, typedocOptions));
+  app.bootstrap(Object.assign({ name: id }, typedocOptions));
 
   try {
-    const reflection = app.convert(src);
+
+    /**
+     * In TS 0.20.x+, a TS program is needed to properly
+     * serialize a project to an object format. For 0.17,
+     * you don't need to.
+     */
+    let program;
+
+    if (app.options.getFileNames) {
+      program = typescript.createProgram(
+        app.options.getFileNames(),
+        app.options.getCompilerOptions()
+      );
+    }
+
+    const reflection = program
+      ? app.converter.convert(app.expandInputFiles(src), program)
+      : app.convert(app.expandInputFiles(src));
 
     if (reflection) {
-      const eventData = {
-        outputDirectory: __dirname,
-        outputFile: `generated=${id}.json`,
-      };
-      const serialized = app.serializer.projectToObject(reflection, {
-        begin: eventData,
-        end: eventData,
-      });
+      const serialized = app.serializer.toObject(reflection, program);
       const nodeData = processTypeDoc(serialized);
 
       // Store in Gatsby cache

@@ -28,9 +28,8 @@ module.exports = {
 
         // Options passed to Typedoc Application
         // Usually corresponds to CLI args directly
+        // See: https://typedoc.org/guides/options/
         typedoc: {
-          target: "es5",
-          mode: "modules",
           tsconfig: `${__dirname}/path/to/tsconfig.json`
         }
       }
@@ -38,6 +37,8 @@ module.exports = {
   ]
 };
 ```
+
+> **NOTE:** Starting with `typedoc@0.20.x` you **must** provide a path to the `tsconfig.json` file. See [release notes](https://github.com/TypeStrong/typedoc/releases/tag/v0.20.0). This source plugin supports typedoc versions previous to 0.20 but there are breaking changes to the exported JSON you may need to account for.
 
 In GraphQL now you may do:
 
@@ -58,6 +59,12 @@ In GraphQL now you may do:
 ```
 
 The `typedoc.internal.content` field contains the generated JSON you can use to parse and use in your app. You can optionally use GraphQL to go into the `typedoc.source` fields but due to the recursive nature of the data structure, this may be more annoying than useful.
+
+## Transforming Markdown Symbol Links
+
+Want to be able to transform [Typedoc symbol links](https://typedoc.org/guides/link-resolution/) in Markdown files like `[[MyClass]]` to link to your Typedoc API docs?
+
+Check out the sister plugin [gatsby-remark-typedoc-symbol-links](https://github.com/kamranayub/gatsby-remark-typedoc-symbol-links).
 
 ## How is this being used?
 
