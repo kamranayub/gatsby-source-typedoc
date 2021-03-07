@@ -1,4 +1,4 @@
-const { helpers, cleanNodeForSnapshot } = require("./__fixtures__/test-utils");
+const { helpers } = require("./__fixtures__/test-utils");
 const { sourceNodes } = require("../gatsby-node");
 
 jest.mock("typedoc", () => require("typedoc17"));
@@ -17,11 +17,11 @@ describe("gatsby-node: sourceNodes", () => {
         typedoc: {
           target: "es5",
           mode: "modules",
+          disableSources: true,
         },
       });
 
       expect(typedocNode).toBeDefined();
-      cleanNodeForSnapshot(typedocNode);
       expect(typedocNode).toMatchSnapshot();
     });
   });
