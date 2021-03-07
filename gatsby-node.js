@@ -78,10 +78,17 @@ exports.sourceNodes = async (
   app.bootstrap(Object.assign({ name: id }, typedocOptions));
 
   try {
-    const reflection = app.convert(src);
+    const program = typescript.createProgram(
+      app.options.getFileNames(),
+      app.options.getCompilerOptions()
+    );
+    const reflection = app.converter.convert(
+      app.expandInputFiles(src),
+      program
+    );
 
     if (reflection) {
-      const serialized = app.serializer.toObject(reflection);
+      const serialized = app.serializer.toObject(reflection, program);
       const nodeData = processTypeDoc(serialized);
 
       // Store in Gatsby cache
