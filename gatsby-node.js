@@ -78,14 +78,24 @@ exports.sourceNodes = async (
   app.bootstrap(Object.assign({ name: id }, typedocOptions));
 
   try {
-    const program = typescript.createProgram(
-      app.options.getFileNames(),
-      app.options.getCompilerOptions()
-    );
-    const reflection = app.converter.convert(
-      app.expandInputFiles(src),
-      program
-    );
+
+    /**
+     * In TS 0.20.x+, a TS program is needed to properly
+     * serialize a project to an object format. For 0.17,
+     * you don't need to.
+     */
+    let program;
+
+    if (app.options.getFileNames) {
+      program = typescript.createProgram(
+        app.options.getFileNames(),
+        app.options.getCompilerOptions()
+      );
+    }
+
+    const reflection = program
+      ? app.converter.convert(app.expandInputFiles(src), program)
+      : app.convert(app.expandInputFiles(src));
 
     if (reflection) {
       const serialized = app.serializer.toObject(reflection, program);

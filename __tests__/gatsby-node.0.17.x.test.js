@@ -1,4 +1,4 @@
-const helpers = require("./__fixtures__/helpers");
+const { helpers, cleanNodeForSnapshot } = require("./__fixtures__/test-utils");
 const { sourceNodes } = require("../gatsby-node");
 
 jest.mock("typedoc", () => require("typedoc17"));
@@ -6,9 +6,11 @@ jest.mock("typedoc", () => require("typedoc17"));
 describe("gatsby-node: sourceNodes", () => {
   describe("typedoc: 0.17.x", () => {
     it("should generate project", async () => {
-      const nodes = [];
+      let typedocNode;
 
-      helpers.actions.createNode.mockImplementation((node) => nodes.push(node));
+      helpers.actions.createNode.mockImplementation((node) => {
+        typedocNode = node;
+      });
 
       await sourceNodes(helpers, {
         src: [require.resolve("./__fixtures__/simple/index.ts")],
@@ -18,7 +20,9 @@ describe("gatsby-node: sourceNodes", () => {
         },
       });
 
-      expect(nodes).toMatchSnapshot();
+      expect(typedocNode).toBeDefined();
+      cleanNodeForSnapshot(typedocNode);
+      expect(typedocNode).toMatchSnapshot();
     });
   });
 });
