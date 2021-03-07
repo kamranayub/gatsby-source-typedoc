@@ -38,7 +38,7 @@ module.exports = {
 };
 ```
 
-> **NOTE:** Starting with `typedoc@0.20.x` you **must** provide a path to the `tsconfig.json` file.
+> **NOTE:** Starting with `typedoc@0.20.x` you **must** provide a path to the `tsconfig.json` file. See [release notes](https://github.com/TypeStrong/typedoc/releases/tag/v0.20.0). This source plugin supports typedoc versions previous to 0.20 but there are breaking changes to the exported JSON you may need to account for.
 
 In GraphQL now you may do:
 
