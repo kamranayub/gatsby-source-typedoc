@@ -78,7 +78,6 @@ exports.sourceNodes = async (
   app.bootstrap(Object.assign({ name: id }, typedocOptions));
 
   try {
-
     /**
      * In TS 0.20.x+, a TS program is needed to properly
      * serialize a project to an object format. For 0.17,
@@ -87,14 +86,16 @@ exports.sourceNodes = async (
     let program;
 
     if (app.options.getFileNames) {
-      program = typescript.createProgram(
-        app.options.getFileNames(),
-        app.options.getCompilerOptions()
-      );
+      program = typescript.createProgram({
+        rootNames: app.options.getFileNames(),
+        options: app.options.getCompilerOptions(),
+        projectReferences: app.options.getProjectReferences(),
+      });
+      app.options.setValue("entryPoints", app.expandInputFiles(src));
     }
 
     const reflection = program
-      ? app.converter.convert(app.expandInputFiles(src), program)
+      ? app.convert()
       : app.convert(app.expandInputFiles(src));
 
     if (reflection) {
