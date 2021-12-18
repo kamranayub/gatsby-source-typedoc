@@ -1,12 +1,10 @@
-name: Node.js Package Lint, Test and Publish
+name: Node.js Package Lint & Test
 
 on:
-  push:
-    branches:
-      - 'master'
+  pull_request:
 
 jobs:
-  build-and-publish-npm:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -19,8 +17,3 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm test
-      - run: npx semantic-release
-        env:
-          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-          GH_TOKEN: ${{secrets.GH_TOKEN}}

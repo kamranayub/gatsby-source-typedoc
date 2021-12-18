@@ -1,3 +1,4 @@
+// @ts-check
 const typescript = require("typescript");
 const { Application, TypeDocReader, TSConfigReader } = require("typedoc");
 const fs = require("fs");
@@ -79,7 +80,7 @@ exports.sourceNodes = async (
 
   try {
     /**
-     * In TS 0.20.x+, a TS program is needed to properly
+     * In Typedoc 0.20.x+, a TS program is needed to properly
      * serialize a project to an object format. For 0.17,
      * you don't need to.
      */
@@ -91,12 +92,27 @@ exports.sourceNodes = async (
         options: app.options.getCompilerOptions(),
         projectReferences: app.options.getProjectReferences(),
       });
-      app.options.setValue("entryPoints", app.expandInputFiles(src));
+      app.options.setValue("entryPoints", src);
     }
 
+    /**
+     * In Typedoc 0.22.0+, entry point strategies were changed so this API
+     * changed
+     */
+     const getEntryPoints = () => {
+      // @ts-expect-error
+      if (app.expandInputFiles) {
+        // @ts-expect-error
+        return app.expandInputFiles(src);
+      } else {
+        return app.getEntryPoints();
+      }
+    };
+    
     const reflection = program
       ? app.convert()
-      : app.convert(app.expandInputFiles(src));
+      : // @ts-expect-error -- for Typedoc 0.19 and below
+        app.convert(getEntryPoints());
 
     if (reflection) {
       const serialized = app.serializer.toObject(reflection, program);
