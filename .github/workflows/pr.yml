@@ -1,0 +1,19 @@
+name: Node.js Package Lint & Test
+
+on:
+  pull_request:
+
+jobs:
+  build-and-publish-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v2
+        with:
+          node-version-file: '.nvmrc'
+          registry-url: https://registry.npmjs.org/
+      - run: npm install
+      - run: npm run lint
+      - run: npm test
