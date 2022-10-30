@@ -35,10 +35,11 @@
     "jest": "^27.4.5",
     "prettier": "1.17.0",
     "standard-version": "^8.0.1",
-    "typedoc": "^0.22.10",
+    "typedoc": "^0.23.19",
     "typedoc17": "npm:typedoc@0.17.8",
     "typedoc21": "npm:typedoc@0.21.9",
-    "typescript": "4.4.x"
+    "typedoc22": "npm:typedoc@0.22.10",
+    "typescript": "4.6.x"
   },
   "husky": {
     "hooks": {
