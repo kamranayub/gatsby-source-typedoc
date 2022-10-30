@@ -1,7 +1,7 @@
 const { helpers, cleanNodeForSnapshot } = require("./__fixtures__/test-utils");
 const { sourceNodes } = require("../gatsby-node");
 
-describe.skip("gatsby-node: sourceNodes", () => {
+describe("gatsby-node: sourceNodes", () => {
   describe("typedoc: latest", () => {
     it("should generate project", async () => {
       let typedocNode;
