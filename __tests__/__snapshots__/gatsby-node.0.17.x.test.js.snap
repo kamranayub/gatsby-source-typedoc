@@ -1,21 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`gatsby-node: sourceNodes typedoc: 0.17.x should generate project 1`] = `
-Object {
+{
   "id": "typedoc-default",
-  "internal": Object {
-    "content": "{\\"id\\":0,\\"name\\":\\"default\\",\\"kind\\":0,\\"flags\\":{},\\"children\\":[{\\"id\\":4,\\"name\\":\\"\\\\\\"index\\\\\\"\\",\\"kind\\":1,\\"kindString\\":\\"Module\\",\\"flags\\":{\\"isExported\\":true},\\"originalName\\":\\"__PROJECT__/simple/index.ts\\",\\"children\\":[{\\"id\\":5,\\"name\\":\\"TestClass1\\",\\"kind\\":128,\\"kindString\\":\\"Class\\",\\"flags\\":{\\"isExported\\":true},\\"children\\":[{\\"id\\":6,\\"name\\":\\"propPrivate\\",\\"kind\\":1024,\\"kindString\\":\\"Property\\",\\"flags\\":{\\"isPrivate\\":true,\\"isExported\\":true},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"string\\"}},{\\"id\\":7,\\"name\\":\\"propPublic\\",\\"kind\\":1024,\\"kindString\\":\\"Property\\",\\"flags\\":{\\"isPublic\\":true,\\"isExported\\":true},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"string\\"}},{\\"id\\":14,\\"name\\":\\"getterPublic\\",\\"kind\\":262144,\\"kindString\\":\\"Accessor\\",\\"flags\\":{\\"isExported\\":true},\\"getSignature\\":[{\\"id\\":15,\\"name\\":\\"__get\\",\\"kind\\":524288,\\"kindString\\":\\"Get signature\\",\\"flags\\":{\\"isExported\\":true},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"number\\"}}]},{\\"id\\":16,\\"name\\":\\"setterPublic\\",\\"kind\\":262144,\\"kindString\\":\\"Accessor\\",\\"flags\\":{\\"isExported\\":true},\\"setSignature\\":[{\\"id\\":17,\\"name\\":\\"__set\\",\\"kind\\":1048576,\\"kindString\\":\\"Set signature\\",\\"flags\\":{\\"isExported\\":true},\\"parameters\\":[{\\"id\\":18,\\"name\\":\\"value\\",\\"kind\\":32768,\\"kindString\\":\\"Parameter\\",\\"flags\\":{\\"isExported\\":true},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"string\\"}}],\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"void\\"}}]},{\\"id\\":10,\\"name\\":\\"getPrivate\\",\\"kind\\":2048,\\"kindString\\":\\"Method\\",\\"flags\\":{\\"isPrivate\\":true,\\"isExported\\":true},\\"signatures\\":[{\\"id\\":11,\\"name\\":\\"getPrivate\\",\\"kind\\":4096,\\"kindString\\":\\"Call signature\\",\\"flags\\":{\\"isExported\\":true},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"boolean\\"}}]},{\\"id\\":12,\\"name\\":\\"getProtected\\",\\"kind\\":2048,\\"kindString\\":\\"Method\\",\\"flags\\":{\\"isProtected\\":true,\\"isExported\\":true},\\"signatures\\":[{\\"id\\":13,\\"name\\":\\"getProtected\\",\\"kind\\":4096,\\"kindString\\":\\"Call signature\\",\\"flags\\":{\\"isExported\\":true},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"boolean\\"}}]},{\\"id\\":8,\\"name\\":\\"getPublic\\",\\"kind\\":2048,\\"kindString\\":\\"Method\\",\\"flags\\":{\\"isPublic\\":true,\\"isExported\\":true},\\"signatures\\":[{\\"id\\":9,\\"name\\":\\"getPublic\\",\\"kind\\":4096,\\"kindString\\":\\"Call signature\\",\\"flags\\":{\\"isExported\\":true},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"boolean\\"}}]}],\\"groups\\":[{\\"title\\":\\"Properties\\",\\"kind\\":1024,\\"children\\":[6,7]},{\\"title\\":\\"Accessors\\",\\"kind\\":262144,\\"children\\":[14,16]},{\\"title\\":\\"Methods\\",\\"kind\\":2048,\\"children\\":[10,12,8]}]},{\\"id\\":19,\\"name\\":\\"exportedFn\\",\\"kind\\":64,\\"kindString\\":\\"Function\\",\\"flags\\":{\\"isExported\\":true},\\"signatures\\":[{\\"id\\":20,\\"name\\":\\"exportedFn\\",\\"kind\\":4096,\\"kindString\\":\\"Call signature\\",\\"flags\\":{\\"isExported\\":true},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"number\\"}}]}],\\"groups\\":[{\\"title\\":\\"Classes\\",\\"kind\\":128,\\"children\\":[5]},{\\"title\\":\\"Functions\\",\\"kind\\":64,\\"children\\":[19]}]},{\\"id\\":1,\\"name\\":\\"\\\\\\"moduleA\\\\\\"\\",\\"kind\\":1,\\"kindString\\":\\"Module\\",\\"flags\\":{\\"isExported\\":true,\\"isExternal\\":true},\\"originalName\\":\\"__PROJECT__/simple/moduleA.ts\\",\\"children\\":[{\\"id\\":2,\\"name\\":\\"util\\",\\"kind\\":64,\\"kindString\\":\\"Function\\",\\"flags\\":{\\"isExported\\":true,\\"isExternal\\":true},\\"signatures\\":[{\\"id\\":3,\\"name\\":\\"util\\",\\"kind\\":4096,\\"kindString\\":\\"Call signature\\",\\"flags\\":{\\"isExported\\":true},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"string\\"}}]}],\\"groups\\":[{\\"title\\":\\"Functions\\",\\"kind\\":64,\\"children\\":[2]}]}],\\"groups\\":[{\\"title\\":\\"Modules\\",\\"kind\\":1,\\"children\\":[4,1]}]}",
+  "internal": {
+    "content": "{"id":0,"name":"default","kind":0,"flags":{},"children":[{"id":4,"name":"\\"index\\"","kind":1,"kindString":"Module","flags":{"isExported":true},"originalName":"__PROJECT__/simple/index.ts","children":[{"id":5,"name":"TestClass1","kind":128,"kindString":"Class","flags":{"isExported":true},"children":[{"id":6,"name":"propPrivate","kind":1024,"kindString":"Property","flags":{"isPrivate":true,"isExported":true},"type":{"type":"intrinsic","name":"string"}},{"id":7,"name":"propPublic","kind":1024,"kindString":"Property","flags":{"isPublic":true,"isExported":true},"type":{"type":"intrinsic","name":"string"}},{"id":14,"name":"getterPublic","kind":262144,"kindString":"Accessor","flags":{"isExported":true},"getSignature":[{"id":15,"name":"__get","kind":524288,"kindString":"Get signature","flags":{"isExported":true},"type":{"type":"intrinsic","name":"number"}}]},{"id":16,"name":"setterPublic","kind":262144,"kindString":"Accessor","flags":{"isExported":true},"setSignature":[{"id":17,"name":"__set","kind":1048576,"kindString":"Set signature","flags":{"isExported":true},"parameters":[{"id":18,"name":"value","kind":32768,"kindString":"Parameter","flags":{"isExported":true},"type":{"type":"intrinsic","name":"string"}}],"type":{"type":"intrinsic","name":"void"}}]},{"id":10,"name":"getPrivate","kind":2048,"kindString":"Method","flags":{"isPrivate":true,"isExported":true},"signatures":[{"id":11,"name":"getPrivate","kind":4096,"kindString":"Call signature","flags":{"isExported":true},"type":{"type":"intrinsic","name":"boolean"}}]},{"id":12,"name":"getProtected","kind":2048,"kindString":"Method","flags":{"isProtected":true,"isExported":true},"signatures":[{"id":13,"name":"getProtected","kind":4096,"kindString":"Call signature","flags":{"isExported":true},"type":{"type":"intrinsic","name":"boolean"}}]},{"id":8,"name":"getPublic","kind":2048,"kindString":"Method","flags":{"isPublic":true,"isExported":true},"signatures":[{"id":9,"name":"getPublic","kind":4096,"kindString":"Call signature","flags":{"isExported":true},"type":{"type":"intrinsic","name":"boolean"}}]}],"groups":[{"title":"Properties","kind":1024,"children":[6,7]},{"title":"Accessors","kind":262144,"children":[14,16]},{"title":"Methods","kind":2048,"children":[10,12,8]}]},{"id":19,"name":"exportedFn","kind":64,"kindString":"Function","flags":{"isExported":true},"signatures":[{"id":20,"name":"exportedFn","kind":4096,"kindString":"Call signature","flags":{"isExported":true},"type":{"type":"intrinsic","name":"number"}}]}],"groups":[{"title":"Classes","kind":128,"children":[5]},{"title":"Functions","kind":64,"children":[19]}]},{"id":1,"name":"\\"moduleA\\"","kind":1,"kindString":"Module","flags":{"isExported":true,"isExternal":true},"originalName":"__PROJECT__/simple/moduleA.ts","children":[{"id":2,"name":"util","kind":64,"kindString":"Function","flags":{"isExported":true,"isExternal":true},"signatures":[{"id":3,"name":"util","kind":4096,"kindString":"Call signature","flags":{"isExported":true},"type":{"type":"intrinsic","name":"string"}}]}],"groups":[{"title":"Functions","kind":64,"children":[2]}]}],"groups":[{"title":"Modules","kind":1,"children":[4,1]}]}",
     "contentDigest": "testdigest",
     "type": "Typedoc",
   },
-  "source": Object {
-    "children": Array [
-      Object {
-        "children": Array [
-          Object {
-            "children": Array [
-              Object {
-                "flags": Object {
+  "source": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [
+              {
+                "flags": {
                   "isExported": true,
                   "isPrivate": true,
                 },
@@ -23,13 +23,13 @@ Object {
                 "kind": 1024,
                 "kindString": "Property",
                 "name": "propPrivate",
-                "type": Object {
+                "type": {
                   "name": "string",
                   "type": "intrinsic",
                 },
               },
-              Object {
-                "flags": Object {
+              {
+                "flags": {
                   "isExported": true,
                   "isPublic": true,
                 },
@@ -37,25 +37,25 @@ Object {
                 "kind": 1024,
                 "kindString": "Property",
                 "name": "propPublic",
-                "type": Object {
+                "type": {
                   "name": "string",
                   "type": "intrinsic",
                 },
               },
-              Object {
-                "flags": Object {
+              {
+                "flags": {
                   "isExported": true,
                 },
-                "getSignature": Array [
-                  Object {
-                    "flags": Object {
+                "getSignature": [
+                  {
+                    "flags": {
                       "isExported": true,
                     },
                     "id": 15,
                     "kind": 524288,
                     "kindString": "Get signature",
                     "name": "__get",
-                    "type": Object {
+                    "type": {
                       "name": "number",
                       "type": "intrinsic",
                     },
@@ -66,47 +66,47 @@ Object {
                 "kindString": "Accessor",
                 "name": "getterPublic",
               },
-              Object {
-                "flags": Object {
+              {
+                "flags": {
                   "isExported": true,
                 },
                 "id": 16,
                 "kind": 262144,
                 "kindString": "Accessor",
                 "name": "setterPublic",
-                "setSignature": Array [
-                  Object {
-                    "flags": Object {
+                "setSignature": [
+                  {
+                    "flags": {
                       "isExported": true,
                     },
                     "id": 17,
                     "kind": 1048576,
                     "kindString": "Set signature",
                     "name": "__set",
-                    "parameters": Array [
-                      Object {
-                        "flags": Object {
+                    "parameters": [
+                      {
+                        "flags": {
                           "isExported": true,
                         },
                         "id": 18,
                         "kind": 32768,
                         "kindString": "Parameter",
                         "name": "value",
-                        "type": Object {
+                        "type": {
                           "name": "string",
                           "type": "intrinsic",
                         },
                       },
                     ],
-                    "type": Object {
+                    "type": {
                       "name": "void",
                       "type": "intrinsic",
                     },
                   },
                 ],
               },
-              Object {
-                "flags": Object {
+              {
+                "flags": {
                   "isExported": true,
                   "isPrivate": true,
                 },
@@ -114,24 +114,24 @@ Object {
                 "kind": 2048,
                 "kindString": "Method",
                 "name": "getPrivate",
-                "signatures": Array [
-                  Object {
-                    "flags": Object {
+                "signatures": [
+                  {
+                    "flags": {
                       "isExported": true,
                     },
                     "id": 11,
                     "kind": 4096,
                     "kindString": "Call signature",
                     "name": "getPrivate",
-                    "type": Object {
+                    "type": {
                       "name": "boolean",
                       "type": "intrinsic",
                     },
                   },
                 ],
               },
-              Object {
-                "flags": Object {
+              {
+                "flags": {
                   "isExported": true,
                   "isProtected": true,
                 },
@@ -139,24 +139,24 @@ Object {
                 "kind": 2048,
                 "kindString": "Method",
                 "name": "getProtected",
-                "signatures": Array [
-                  Object {
-                    "flags": Object {
+                "signatures": [
+                  {
+                    "flags": {
                       "isExported": true,
                     },
                     "id": 13,
                     "kind": 4096,
                     "kindString": "Call signature",
                     "name": "getProtected",
-                    "type": Object {
+                    "type": {
                       "name": "boolean",
                       "type": "intrinsic",
                     },
                   },
                 ],
               },
-              Object {
-                "flags": Object {
+              {
+                "flags": {
                   "isExported": true,
                   "isPublic": true,
                 },
@@ -164,16 +164,16 @@ Object {
                 "kind": 2048,
                 "kindString": "Method",
                 "name": "getPublic",
-                "signatures": Array [
-                  Object {
-                    "flags": Object {
+                "signatures": [
+                  {
+                    "flags": {
                       "isExported": true,
                     },
                     "id": 9,
                     "kind": 4096,
                     "kindString": "Call signature",
                     "name": "getPublic",
-                    "type": Object {
+                    "type": {
                       "name": "boolean",
                       "type": "intrinsic",
                     },
@@ -181,28 +181,28 @@ Object {
                 ],
               },
             ],
-            "flags": Object {
+            "flags": {
               "isExported": true,
             },
-            "groups": Array [
-              Object {
-                "children": Array [
+            "groups": [
+              {
+                "children": [
                   6,
                   7,
                 ],
                 "kind": 1024,
                 "title": "Properties",
               },
-              Object {
-                "children": Array [
+              {
+                "children": [
                   14,
                   16,
                 ],
                 "kind": 262144,
                 "title": "Accessors",
               },
-              Object {
-                "children": Array [
+              {
+                "children": [
                   10,
                   12,
                   8,
@@ -216,24 +216,24 @@ Object {
             "kindString": "Class",
             "name": "TestClass1",
           },
-          Object {
-            "flags": Object {
+          {
+            "flags": {
               "isExported": true,
             },
             "id": 19,
             "kind": 64,
             "kindString": "Function",
             "name": "exportedFn",
-            "signatures": Array [
-              Object {
-                "flags": Object {
+            "signatures": [
+              {
+                "flags": {
                   "isExported": true,
                 },
                 "id": 20,
                 "kind": 4096,
                 "kindString": "Call signature",
                 "name": "exportedFn",
-                "type": Object {
+                "type": {
                   "name": "number",
                   "type": "intrinsic",
                 },
@@ -241,19 +241,19 @@ Object {
             ],
           },
         ],
-        "flags": Object {
+        "flags": {
           "isExported": true,
         },
-        "groups": Array [
-          Object {
-            "children": Array [
+        "groups": [
+          {
+            "children": [
               5,
             ],
             "kind": 128,
             "title": "Classes",
           },
-          Object {
-            "children": Array [
+          {
+            "children": [
               19,
             ],
             "kind": 64,
@@ -263,12 +263,12 @@ Object {
         "id": 4,
         "kind": 1,
         "kindString": "Module",
-        "name": "\\"index\\"",
+        "name": ""index"",
       },
-      Object {
-        "children": Array [
-          Object {
-            "flags": Object {
+      {
+        "children": [
+          {
+            "flags": {
               "isExported": true,
               "isExternal": true,
             },
@@ -276,16 +276,16 @@ Object {
             "kind": 64,
             "kindString": "Function",
             "name": "util",
-            "signatures": Array [
-              Object {
-                "flags": Object {
+            "signatures": [
+              {
+                "flags": {
                   "isExported": true,
                 },
                 "id": 3,
                 "kind": 4096,
                 "kindString": "Call signature",
                 "name": "util",
-                "type": Object {
+                "type": {
                   "name": "string",
                   "type": "intrinsic",
                 },
@@ -293,13 +293,13 @@ Object {
             ],
           },
         ],
-        "flags": Object {
+        "flags": {
           "isExported": true,
           "isExternal": true,
         },
-        "groups": Array [
-          Object {
-            "children": Array [
+        "groups": [
+          {
+            "children": [
               2,
             ],
             "kind": 64,
@@ -309,13 +309,13 @@ Object {
         "id": 1,
         "kind": 1,
         "kindString": "Module",
-        "name": "\\"moduleA\\"",
+        "name": ""moduleA"",
       },
     ],
-    "flags": Object {},
-    "groups": Array [
-      Object {
-        "children": Array [
+    "flags": {},
+    "groups": [
+      {
+        "children": [
           4,
           1,
         ],

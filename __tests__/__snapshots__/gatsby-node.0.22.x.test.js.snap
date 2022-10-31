@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`gatsby-node: sourceNodes typedoc: latest should generate project 1`] = `
-Object {
+{
   "id": "typedoc-default",
-  "internal": Object {
-    "content": "{\\"sourceFileToPackageName\\":{},\\"redirectTargetsMap\\":{},\\"usesUriStyleNodeCoreModules\\":false,\\"structureIsReused\\":0,\\"id\\":0,\\"name\\":\\"default\\",\\"kind\\":1,\\"kindString\\":\\"Project\\",\\"flags\\":{},\\"children\\":[{\\"id\\":3,\\"name\\":\\"TestClass1\\",\\"kind\\":128,\\"kindString\\":\\"Class\\",\\"flags\\":{},\\"children\\":[{\\"id\\":4,\\"name\\":\\"constructor\\",\\"kind\\":512,\\"kindString\\":\\"Constructor\\",\\"flags\\":{},\\"signatures\\":[{\\"id\\":5,\\"name\\":\\"new TestClass1\\",\\"kind\\":16384,\\"kindString\\":\\"Constructor signature\\",\\"flags\\":{},\\"type\\":{\\"type\\":\\"reference\\",\\"id\\":3,\\"name\\":\\"TestClass1\\"}}]},{\\"id\\":6,\\"name\\":\\"propPrivate\\",\\"kind\\":1024,\\"kindString\\":\\"Property\\",\\"flags\\":{\\"isPrivate\\":true},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"string\\"}},{\\"id\\":7,\\"name\\":\\"propPublic\\",\\"kind\\":1024,\\"kindString\\":\\"Property\\",\\"flags\\":{\\"isPublic\\":true},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"string\\"}},{\\"id\\":14,\\"name\\":\\"getterPublic\\",\\"kind\\":262144,\\"kindString\\":\\"Accessor\\",\\"flags\\":{},\\"getSignature\\":[{\\"id\\":15,\\"name\\":\\"getterPublic\\",\\"kind\\":524288,\\"kindString\\":\\"Get signature\\",\\"flags\\":{},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"number\\"}}]},{\\"id\\":16,\\"name\\":\\"setterPublic\\",\\"kind\\":262144,\\"kindString\\":\\"Accessor\\",\\"flags\\":{},\\"setSignature\\":[{\\"id\\":17,\\"name\\":\\"setterPublic\\",\\"kind\\":1048576,\\"kindString\\":\\"Set signature\\",\\"flags\\":{},\\"parameters\\":[{\\"id\\":18,\\"name\\":\\"value\\",\\"kind\\":32768,\\"kindString\\":\\"Parameter\\",\\"flags\\":{},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"string\\"}}],\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"void\\"}}]},{\\"id\\":10,\\"name\\":\\"getPrivate\\",\\"kind\\":2048,\\"kindString\\":\\"Method\\",\\"flags\\":{\\"isPrivate\\":true},\\"signatures\\":[{\\"id\\":11,\\"name\\":\\"getPrivate\\",\\"kind\\":4096,\\"kindString\\":\\"Call signature\\",\\"flags\\":{},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"boolean\\"}}]},{\\"id\\":12,\\"name\\":\\"getProtected\\",\\"kind\\":2048,\\"kindString\\":\\"Method\\",\\"flags\\":{\\"isProtected\\":true},\\"signatures\\":[{\\"id\\":13,\\"name\\":\\"getProtected\\",\\"kind\\":4096,\\"kindString\\":\\"Call signature\\",\\"flags\\":{},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"boolean\\"}}]},{\\"id\\":8,\\"name\\":\\"getPublic\\",\\"kind\\":2048,\\"kindString\\":\\"Method\\",\\"flags\\":{\\"isPublic\\":true},\\"signatures\\":[{\\"id\\":9,\\"name\\":\\"getPublic\\",\\"kind\\":4096,\\"kindString\\":\\"Call signature\\",\\"flags\\":{},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"boolean\\"}}]}],\\"groups\\":[{\\"title\\":\\"Constructors\\",\\"kind\\":512,\\"children\\":[4]},{\\"title\\":\\"Properties\\",\\"kind\\":1024,\\"children\\":[6,7]},{\\"title\\":\\"Accessors\\",\\"kind\\":262144,\\"children\\":[14,16]},{\\"title\\":\\"Methods\\",\\"kind\\":2048,\\"children\\":[10,12,8]}]},{\\"id\\":1,\\"name\\":\\"exportedFn\\",\\"kind\\":64,\\"kindString\\":\\"Function\\",\\"flags\\":{},\\"signatures\\":[{\\"id\\":2,\\"name\\":\\"exportedFn\\",\\"kind\\":4096,\\"kindString\\":\\"Call signature\\",\\"flags\\":{},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"number\\"}}]},{\\"id\\":19,\\"name\\":\\"util\\",\\"kind\\":64,\\"kindString\\":\\"Function\\",\\"flags\\":{},\\"signatures\\":[{\\"id\\":20,\\"name\\":\\"util\\",\\"kind\\":4096,\\"kindString\\":\\"Call signature\\",\\"flags\\":{},\\"type\\":{\\"type\\":\\"intrinsic\\",\\"name\\":\\"string\\"}}]}],\\"groups\\":[{\\"title\\":\\"Classes\\",\\"kind\\":128,\\"children\\":[3]},{\\"title\\":\\"Functions\\",\\"kind\\":64,\\"children\\":[1,19]}]}",
+  "internal": {
+    "content": "{"sourceFileToPackageName":{},"redirectTargetsMap":{},"usesUriStyleNodeCoreModules":false,"structureIsReused":0,"id":0,"name":"default","kind":1,"kindString":"Project","flags":{},"children":[{"id":3,"name":"TestClass1","kind":128,"kindString":"Class","flags":{},"children":[{"id":4,"name":"constructor","kind":512,"kindString":"Constructor","flags":{},"signatures":[{"id":5,"name":"new TestClass1","kind":16384,"kindString":"Constructor signature","flags":{},"type":{"type":"reference","id":3,"name":"TestClass1"}}]},{"id":6,"name":"propPrivate","kind":1024,"kindString":"Property","flags":{"isPrivate":true},"type":{"type":"intrinsic","name":"string"}},{"id":7,"name":"propPublic","kind":1024,"kindString":"Property","flags":{"isPublic":true},"type":{"type":"intrinsic","name":"string"}},{"id":14,"name":"getterPublic","kind":262144,"kindString":"Accessor","flags":{},"getSignature":[{"id":15,"name":"getterPublic","kind":524288,"kindString":"Get signature","flags":{},"type":{"type":"intrinsic","name":"number"}}]},{"id":16,"name":"setterPublic","kind":262144,"kindString":"Accessor","flags":{},"setSignature":[{"id":17,"name":"setterPublic","kind":1048576,"kindString":"Set signature","flags":{},"parameters":[{"id":18,"name":"value","kind":32768,"kindString":"Parameter","flags":{},"type":{"type":"intrinsic","name":"string"}}],"type":{"type":"intrinsic","name":"void"}}]},{"id":10,"name":"getPrivate","kind":2048,"kindString":"Method","flags":{"isPrivate":true},"signatures":[{"id":11,"name":"getPrivate","kind":4096,"kindString":"Call signature","flags":{},"type":{"type":"intrinsic","name":"boolean"}}]},{"id":12,"name":"getProtected","kind":2048,"kindString":"Method","flags":{"isProtected":true},"signatures":[{"id":13,"name":"getProtected","kind":4096,"kindString":"Call signature","flags":{},"type":{"type":"intrinsic","name":"boolean"}}]},{"id":8,"name":"getPublic","kind":2048,"kindString":"Method","flags":{"isPublic":true},"signatures":[{"id":9,"name":"getPublic","kind":4096,"kindString":"Call signature","flags":{},"type":{"type":"intrinsic","name":"boolean"}}]}],"groups":[{"title":"Constructors","kind":512,"children":[4]},{"title":"Properties","kind":1024,"children":[6,7]},{"title":"Accessors","kind":262144,"children":[14,16]},{"title":"Methods","kind":2048,"children":[10,12,8]}]},{"id":1,"name":"exportedFn","kind":64,"kindString":"Function","flags":{},"signatures":[{"id":2,"name":"exportedFn","kind":4096,"kindString":"Call signature","flags":{},"type":{"type":"intrinsic","name":"number"}}]},{"id":19,"name":"util","kind":64,"kindString":"Function","flags":{},"signatures":[{"id":20,"name":"util","kind":4096,"kindString":"Call signature","flags":{},"type":{"type":"intrinsic","name":"string"}}]}],"groups":[{"title":"Classes","kind":128,"children":[3]},{"title":"Functions","kind":64,"children":[1,19]}]}",
     "contentDigest": "testdigest",
     "type": "Typedoc",
   },
-  "source": Object {
+  "source": {
     "categories": undefined,
-    "children": Array [
-      Object {
+    "children": [
+      {
         "categories": undefined,
-        "children": Array [
-          Object {
+        "children": [
+          {
             "categories": undefined,
             "children": undefined,
             "comment": undefined,
@@ -23,7 +23,7 @@ Object {
             "defaultValue": undefined,
             "extendedBy": undefined,
             "extendedTypes": undefined,
-            "flags": Object {},
+            "flags": {},
             "groups": undefined,
             "id": 4,
             "implementationOf": undefined,
@@ -35,12 +35,12 @@ Object {
             "kindString": "Constructor",
             "name": "constructor",
             "overwrites": undefined,
-            "signatures": Array [
-              Object {
+            "signatures": [
+              {
                 "comment": undefined,
                 "decorates": undefined,
                 "decorators": undefined,
-                "flags": Object {},
+                "flags": {},
                 "id": 5,
                 "implementationOf": undefined,
                 "inheritedFrom": undefined,
@@ -49,7 +49,7 @@ Object {
                 "name": "new TestClass1",
                 "overwrites": undefined,
                 "parameters": undefined,
-                "type": Object {
+                "type": {
                   "id": 3,
                   "name": "TestClass1",
                   "type": "reference",
@@ -61,7 +61,7 @@ Object {
             "type": undefined,
             "typeParameter": undefined,
           },
-          Object {
+          {
             "categories": undefined,
             "children": undefined,
             "comment": undefined,
@@ -70,7 +70,7 @@ Object {
             "defaultValue": undefined,
             "extendedBy": undefined,
             "extendedTypes": undefined,
-            "flags": Object {
+            "flags": {
               "isPrivate": true,
             },
             "groups": undefined,
@@ -86,13 +86,13 @@ Object {
             "overwrites": undefined,
             "signatures": undefined,
             "sources": undefined,
-            "type": Object {
+            "type": {
               "name": "string",
               "type": "intrinsic",
             },
             "typeParameter": undefined,
           },
-          Object {
+          {
             "categories": undefined,
             "children": undefined,
             "comment": undefined,
@@ -101,7 +101,7 @@ Object {
             "defaultValue": undefined,
             "extendedBy": undefined,
             "extendedTypes": undefined,
-            "flags": Object {
+            "flags": {
               "isPublic": true,
             },
             "groups": undefined,
@@ -117,13 +117,13 @@ Object {
             "overwrites": undefined,
             "signatures": undefined,
             "sources": undefined,
-            "type": Object {
+            "type": {
               "name": "string",
               "type": "intrinsic",
             },
             "typeParameter": undefined,
           },
-          Object {
+          {
             "categories": undefined,
             "children": undefined,
             "comment": undefined,
@@ -132,13 +132,13 @@ Object {
             "defaultValue": undefined,
             "extendedBy": undefined,
             "extendedTypes": undefined,
-            "flags": Object {},
-            "getSignature": Array [
-              Object {
+            "flags": {},
+            "getSignature": [
+              {
                 "comment": undefined,
                 "decorates": undefined,
                 "decorators": undefined,
-                "flags": Object {},
+                "flags": {},
                 "id": 15,
                 "implementationOf": undefined,
                 "inheritedFrom": undefined,
@@ -147,7 +147,7 @@ Object {
                 "name": "getterPublic",
                 "overwrites": undefined,
                 "parameters": undefined,
-                "type": Object {
+                "type": {
                   "name": "number",
                   "type": "intrinsic",
                 },
@@ -170,7 +170,7 @@ Object {
             "type": undefined,
             "typeParameter": undefined,
           },
-          Object {
+          {
             "categories": undefined,
             "children": undefined,
             "comment": undefined,
@@ -179,7 +179,7 @@ Object {
             "defaultValue": undefined,
             "extendedBy": undefined,
             "extendedTypes": undefined,
-            "flags": Object {},
+            "flags": {},
             "groups": undefined,
             "id": 16,
             "implementationOf": undefined,
@@ -191,12 +191,12 @@ Object {
             "kindString": "Accessor",
             "name": "setterPublic",
             "overwrites": undefined,
-            "setSignature": Array [
-              Object {
+            "setSignature": [
+              {
                 "comment": undefined,
                 "decorates": undefined,
                 "decorators": undefined,
-                "flags": Object {},
+                "flags": {},
                 "id": 17,
                 "implementationOf": undefined,
                 "inheritedFrom": undefined,
@@ -204,24 +204,24 @@ Object {
                 "kindString": "Set signature",
                 "name": "setterPublic",
                 "overwrites": undefined,
-                "parameters": Array [
-                  Object {
+                "parameters": [
+                  {
                     "comment": undefined,
                     "decorates": undefined,
                     "decorators": undefined,
                     "defaultValue": undefined,
-                    "flags": Object {},
+                    "flags": {},
                     "id": 18,
                     "kind": 32768,
                     "kindString": "Parameter",
                     "name": "value",
-                    "type": Object {
+                    "type": {
                       "name": "string",
                       "type": "intrinsic",
                     },
                   },
                 ],
-                "type": Object {
+                "type": {
                   "name": "void",
                   "type": "intrinsic",
                 },
@@ -233,7 +233,7 @@ Object {
             "type": undefined,
             "typeParameter": undefined,
           },
-          Object {
+          {
             "categories": undefined,
             "children": undefined,
             "comment": undefined,
@@ -242,7 +242,7 @@ Object {
             "defaultValue": undefined,
             "extendedBy": undefined,
             "extendedTypes": undefined,
-            "flags": Object {
+            "flags": {
               "isPrivate": true,
             },
             "groups": undefined,
@@ -256,12 +256,12 @@ Object {
             "kindString": "Method",
             "name": "getPrivate",
             "overwrites": undefined,
-            "signatures": Array [
-              Object {
+            "signatures": [
+              {
                 "comment": undefined,
                 "decorates": undefined,
                 "decorators": undefined,
-                "flags": Object {},
+                "flags": {},
                 "id": 11,
                 "implementationOf": undefined,
                 "inheritedFrom": undefined,
@@ -270,7 +270,7 @@ Object {
                 "name": "getPrivate",
                 "overwrites": undefined,
                 "parameters": undefined,
-                "type": Object {
+                "type": {
                   "name": "boolean",
                   "type": "intrinsic",
                 },
@@ -281,7 +281,7 @@ Object {
             "type": undefined,
             "typeParameter": undefined,
           },
-          Object {
+          {
             "categories": undefined,
             "children": undefined,
             "comment": undefined,
@@ -290,7 +290,7 @@ Object {
             "defaultValue": undefined,
             "extendedBy": undefined,
             "extendedTypes": undefined,
-            "flags": Object {
+            "flags": {
               "isProtected": true,
             },
             "groups": undefined,
@@ -304,12 +304,12 @@ Object {
             "kindString": "Method",
             "name": "getProtected",
             "overwrites": undefined,
-            "signatures": Array [
-              Object {
+            "signatures": [
+              {
                 "comment": undefined,
                 "decorates": undefined,
                 "decorators": undefined,
-                "flags": Object {},
+                "flags": {},
                 "id": 13,
                 "implementationOf": undefined,
                 "inheritedFrom": undefined,
@@ -318,7 +318,7 @@ Object {
                 "name": "getProtected",
                 "overwrites": undefined,
                 "parameters": undefined,
-                "type": Object {
+                "type": {
                   "name": "boolean",
                   "type": "intrinsic",
                 },
@@ -329,7 +329,7 @@ Object {
             "type": undefined,
             "typeParameter": undefined,
           },
-          Object {
+          {
             "categories": undefined,
             "children": undefined,
             "comment": undefined,
@@ -338,7 +338,7 @@ Object {
             "defaultValue": undefined,
             "extendedBy": undefined,
             "extendedTypes": undefined,
-            "flags": Object {
+            "flags": {
               "isPublic": true,
             },
             "groups": undefined,
@@ -352,12 +352,12 @@ Object {
             "kindString": "Method",
             "name": "getPublic",
             "overwrites": undefined,
-            "signatures": Array [
-              Object {
+            "signatures": [
+              {
                 "comment": undefined,
                 "decorates": undefined,
                 "decorators": undefined,
-                "flags": Object {},
+                "flags": {},
                 "id": 9,
                 "implementationOf": undefined,
                 "inheritedFrom": undefined,
@@ -366,7 +366,7 @@ Object {
                 "name": "getPublic",
                 "overwrites": undefined,
                 "parameters": undefined,
-                "type": Object {
+                "type": {
                   "name": "boolean",
                   "type": "intrinsic",
                 },
@@ -384,33 +384,33 @@ Object {
         "defaultValue": undefined,
         "extendedBy": undefined,
         "extendedTypes": undefined,
-        "flags": Object {},
-        "groups": Array [
-          Object {
-            "children": Array [
+        "flags": {},
+        "groups": [
+          {
+            "children": [
               4,
             ],
             "kind": 512,
             "title": "Constructors",
           },
-          Object {
-            "children": Array [
+          {
+            "children": [
               6,
               7,
             ],
             "kind": 1024,
             "title": "Properties",
           },
-          Object {
-            "children": Array [
+          {
+            "children": [
               14,
               16,
             ],
             "kind": 262144,
             "title": "Accessors",
           },
-          Object {
-            "children": Array [
+          {
+            "children": [
               10,
               12,
               8,
@@ -434,7 +434,7 @@ Object {
         "type": undefined,
         "typeParameter": undefined,
       },
-      Object {
+      {
         "categories": undefined,
         "children": undefined,
         "comment": undefined,
@@ -443,7 +443,7 @@ Object {
         "defaultValue": undefined,
         "extendedBy": undefined,
         "extendedTypes": undefined,
-        "flags": Object {},
+        "flags": {},
         "groups": undefined,
         "id": 1,
         "implementationOf": undefined,
@@ -455,12 +455,12 @@ Object {
         "kindString": "Function",
         "name": "exportedFn",
         "overwrites": undefined,
-        "signatures": Array [
-          Object {
+        "signatures": [
+          {
             "comment": undefined,
             "decorates": undefined,
             "decorators": undefined,
-            "flags": Object {},
+            "flags": {},
             "id": 2,
             "implementationOf": undefined,
             "inheritedFrom": undefined,
@@ -469,7 +469,7 @@ Object {
             "name": "exportedFn",
             "overwrites": undefined,
             "parameters": undefined,
-            "type": Object {
+            "type": {
               "name": "number",
               "type": "intrinsic",
             },
@@ -480,7 +480,7 @@ Object {
         "type": undefined,
         "typeParameter": undefined,
       },
-      Object {
+      {
         "categories": undefined,
         "children": undefined,
         "comment": undefined,
@@ -489,7 +489,7 @@ Object {
         "defaultValue": undefined,
         "extendedBy": undefined,
         "extendedTypes": undefined,
-        "flags": Object {},
+        "flags": {},
         "groups": undefined,
         "id": 19,
         "implementationOf": undefined,
@@ -501,12 +501,12 @@ Object {
         "kindString": "Function",
         "name": "util",
         "overwrites": undefined,
-        "signatures": Array [
-          Object {
+        "signatures": [
+          {
             "comment": undefined,
             "decorates": undefined,
             "decorators": undefined,
-            "flags": Object {},
+            "flags": {},
             "id": 20,
             "implementationOf": undefined,
             "inheritedFrom": undefined,
@@ -515,7 +515,7 @@ Object {
             "name": "util",
             "overwrites": undefined,
             "parameters": undefined,
-            "type": Object {
+            "type": {
               "name": "string",
               "type": "intrinsic",
             },
@@ -535,7 +535,7 @@ Object {
     "emit": [Function],
     "emitBuildInfo": [Function],
     "fileExists": [Function],
-    "flags": Object {},
+    "flags": {},
     "forEachResolvedProjectReference": [Function],
     "getBindAndCheckDiagnostics": [Function],
     "getCachedSemanticDiagnostics": [Function],
@@ -578,16 +578,16 @@ Object {
     "getSyntacticDiagnostics": [Function],
     "getTypeChecker": [Function],
     "getTypeCount": [Function],
-    "groups": Array [
-      Object {
-        "children": Array [
+    "groups": [
+      {
+        "children": [
           3,
         ],
         "kind": 128,
         "title": "Classes",
       },
-      Object {
-        "children": Array [
+      {
+        "children": [
           1,
           19,
         ],
