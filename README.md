@@ -1,6 +1,6 @@
 ## gatsby-source-typedoc
 
-![build status](https://travis-ci.com/kamranayub/gatsby-source-typedoc.svg?branch=master)
+[![Node.js Package Lint, Test and Publish](https://github.com/kamranayub/gatsby-source-typedoc/actions/workflows/publish.yml/badge.svg)](https://github.com/kamranayub/gatsby-source-typedoc/actions/workflows/publish.yml)
 
 > A Gatsby plugin that executes Typedoc against TypeScript source files to create GraphQL nodes that contain the TypeDoc generated data structure
 
@@ -38,7 +38,17 @@ module.exports = {
 };
 ```
 
-> **NOTE:** Starting with `typedoc@0.20.x` you **must** provide a path to the `tsconfig.json` file. See [release notes](https://github.com/TypeStrong/typedoc/releases/tag/v0.20.0). This source plugin supports typedoc versions previous to 0.20 but there are breaking changes to the exported JSON you may need to account for.
+## Version Notes
+
+### 0.23.x
+
+Starting with `typedoc@0.23.x` you **must** use TypeScript 4.6+. See [release notes](https://github.com/TypeStrong/typedoc/releases/tag/v0.23.0) Older versions of Typedoc may throw warnings if you are using TS 4.6+, so for this reason I bumped this package a major version (2.x).
+
+_Please use 1.x versions of this package for Typedoc 0.22 or below_
+
+### 0.20.x
+
+Starting with `typedoc@0.20.x` you **must** provide a path to the `tsconfig.json` file. See [release notes](https://github.com/TypeStrong/typedoc/releases/tag/v0.20.0). This source plugin supports typedoc versions previous to 0.20 but there are breaking changes to the exported JSON you may need to account for.
 
 In GraphQL now you may do:
 
@@ -74,4 +84,4 @@ In theory, you could use this to create an entire Gatsby site for your Typedoc p
 
 ## Contributing
 
-I welcome all contributions. Releases are automated through Travis CI.
+I welcome all contributions. Releases are automated through GitHub.
