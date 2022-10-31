@@ -1,6 +1,6 @@
 ## gatsby-source-typedoc
 
-![build status](https://travis-ci.com/kamranayub/gatsby-source-typedoc.svg?branch=master)
+[![Node.js Package Lint, Test and Publish](https://github.com/kamranayub/gatsby-source-typedoc/actions/workflows/publish.yml/badge.svg)](https://github.com/kamranayub/gatsby-source-typedoc/actions/workflows/publish.yml)
 
 > A Gatsby plugin that executes Typedoc against TypeScript source files to create GraphQL nodes that contain the TypeDoc generated data structure
 
@@ -74,4 +74,4 @@ In theory, you could use this to create an entire Gatsby site for your Typedoc p
 
 ## Contributing
 
-I welcome all contributions. Releases are automated through Travis CI.
+I welcome all contributions. Releases are automated through GitHub.
